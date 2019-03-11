@@ -2,9 +2,9 @@ var express = require('express');
 
 var app = express();
 
-app.get("/helloworld", (req, res) => {
+app.get("/hello", (req, res) => {
   console.log("Responding to root...");
-  res.send("Hello World!");
+  res.send("Hello World");
 })
 
 app.listen(3000, () => {
