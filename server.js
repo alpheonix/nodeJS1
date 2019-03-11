@@ -5,6 +5,14 @@ app.use(express.json());
 
 console.log('Hello Word');
 
+app.listen(port, () => {
+  console.log("Listening on port 3000...");
+})
+
+app.get("/hello", (req, res) => {
+  res.send("Hello World\n");
+})
+
 app.post('/chat', (req, res) => {
   switch(req.body.msg) {
     case "ville" :
@@ -18,11 +26,3 @@ app.post('/chat', (req, res) => {
       break;
   }
 });
-
-app.get("/hello", (req, res) => {
-  res.send("Hello World\n");
-})
-
-app.listen(port, () => {
-  console.log("Listening on port 3000...");
-})
