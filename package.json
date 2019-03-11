@@ -1,0 +1,23 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "HelloWorld",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmorouche/nodeJS1.git"
+  },
+  "author": "Nassim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmorouche/nodeJS1/issues"
+  },
+  "homepage": "https://github.com/nmorouche/nodeJS1#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
