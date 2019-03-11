@@ -26,6 +26,7 @@ app.post('/chat', (req, res) => {
     case "demain":
       let rawdata = fs.readFileSync('response.json');
       let json = JSON.parse(rawdata);
+      console.log(json.day);
       if(json.day == null) {
         res.send("Je ne connais pas demain…\n");
       }
