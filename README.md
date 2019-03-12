@@ -33,7 +33,7 @@ https://chatbotesginodejs.herokuapp.com/hello
   curl -X DELETE https://chatbotesginodejs.herokuapp.com/messages/last
   ```
 
-### Installation
+## Installation
 
 Assurez-vous d'avoir installé Node.JS avant de commencer.
 
@@ -41,25 +41,21 @@ Assurez-vous d'avoir installé Node.JS avant de commencer.
 $ npm install
 ```
 
-## Deployment
+## Déploiement
 
 Afin de le déployer en local sur une machine modifier la variable url par votre localhost par exemple :
 ```
 const url = "http://localhost:27017/mydatabase";
 ```
 
-## Built With
+## Créer avec
 
 * [Express](https://expressjs.com/en/api.html) - The web framework used
 
-## Versioning
+## Versions
 
 Pour les versions disponibles, se référer [tags on this repository](https://github.com/nmorouche/nodeJS1/tags). 
 
-## Authors
+## Auteurs
 
 * **Nassim MOROUCHE** - [Nassim](https://github.com/nmorouche)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
