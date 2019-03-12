@@ -3,11 +3,13 @@ const fs = require('fs');
 const assert = require('assert');
 
 const MongoClient = require('mongodb').MongoClient;
-const url = 'mongodb://localhost:27017/test';
+const url = 'mongodb://heroku_nnzq3ln7:93Nassim!@ds331735.mlab.com:31735/heroku_nnzq3ln7';
 const dbName = 'messages';
 var app = express();
 var port = process.env.PORT || 3000;
 app.use(express.json());
+
+heroku_nnzq3ln7
 
 (async function() {
   const client = new MongoClient(url);
