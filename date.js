@@ -14,12 +14,14 @@ const dbName = 'dates';
     const db = client.db(dbName);
 
     // Get the collection
-    const col = db.collection('find');
+    const col = db.collection('dates');
 
-    // Insert multiple documents
-    const r = await col.insert({date: new Date});
+    // Insert single document
+    /*let r = await db.collection('dates').insertOne({date:9});
     assert.equal(1, r.insertedCount);
-
+    // Remove multiple documents
+    r = await col.deleteMany({date:9});
+    assert.equal(6, r.deletedCount);*/
     // Get the cursor
     const cursor = col.find();
 
