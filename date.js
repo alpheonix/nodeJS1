@@ -10,26 +10,19 @@ const dbName = 'dates';
   try {
     await client.connect();
     console.log("Connected correctly to server");
-
     const db = client.db(dbName);
 
     // Get the collection
     const col = db.collection('dates');
 
     // Insert single document
-    /*let r = await db.collection('dates').insertOne({date:9});
-    assert.equal(1, r.insertedCount);
+    let r = await col.insertOne({from:'Nassim',msg:'slt'});
+    assert.equal(1, r.insertedCount);/*
     // Remove multiple documents
-    r = await col.deleteMany({date:9});
-    assert.equal(6, r.deletedCount);*/
-    // Get the cursor
-    const cursor = col.find();
-
-    // Iterate over the cursor
-    while(await cursor.hasNext()) {
-      const doc = await cursor.next();
-      console.dir(doc);
-    }
+    r = await col.deleteMany({from:9});
+    assert.equal(2, r.deletedCount);*/
+    let test = await col.find().toArray();
+    console.log(test);
   } catch (err) {
     console.log(err.stack);
   }
