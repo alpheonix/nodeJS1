@@ -14,15 +14,15 @@ https://chatbotesginodejs.herokuapp.com/hello
 
   * La météo :
     ```
-    curl -X POST --header "Content-Type: application/json" --data "{\"msg\":\"météo\"}" https://chatbotesginodejs.herokuapp.com/chat
+    $ curl -X POST --header "Content-Type: application/json" --data "{\"msg\":\"météo\"}" https://chatbotesginodejs.herokuapp.com/chat
     ```
   * La ville :
     ```
-    curl -X POST --header "Content-Type: application/json" --data "{\"msg\":\"ville\"}" https://chatbotesginodejs.herokuapp.com/chat
+    $ curl -X POST --header "Content-Type: application/json" --data "{\"msg\":\"ville\"}" https://chatbotesginodejs.herokuapp.com/chat
     ```
   * demain :
     ```
-    curl -X POST --header "Content-Type: application/json" --data "{\"msg\":\"demain\"}" https://chatbotesginodejs.herokuapp.com/chat
+    $ curl -X POST --header "Content-Type: application/json" --data "{\"msg\":\"demain\"}" https://chatbotesginodejs.herokuapp.com/chat
     ```
 * On peut ensuite voir tous les échanges avec le bot :
   ```
@@ -30,7 +30,7 @@ https://chatbotesginodejs.herokuapp.com/hello
   ```
 * Enfin, on peut supprimer le dernier échange avec le bot :
   ```
-  curl -X DELETE https://chatbotesginodejs.herokuapp.com/messages/last
+  $ curl -X DELETE https://chatbotesginodejs.herokuapp.com/messages/last
   ```
 
 ## Installation
